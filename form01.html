@@ -3,26 +3,74 @@
   <head>
     <meta charset="utf-8">
     <title>Lunch With Friends</title>
-    <link href="stylesheet_optional.css" type="text/css" rel="stylesheet">
+    <link href="style_sheet.css" type="text/css" rel="stylesheet">
     <script src="jquery-3.3.1.min.js" type="application/javascript"></script>
   </head>
   <body>
 
+<h1 id="site-heading">Lunch With Friends</h1>
+    
+<div id="prepared-meal"> 
+    <h2 class="posted-meal">Available Meals</h2>
+    <p class="posted-meal">12pm Meals:</p>
+    <p class="posted-meal">12:45pm Meals:</p>
+    <p class="posted-meal">1:30pm Meals:</p>
+    <p class="posted-meal">2:15pm Meals:</p>
+</div>
 
-<form>
-  <input type="Name" placeholder="Your Name" id=NameInput"><br>
-  <label for="PlanInput">What do you want to do?</label><br>
+<div id="create-meal">
+<h1>Make a Meal</h1>
+<form id="preparing-meal">
+  <input type="Name" placeholder="Your Name" id=chefName"><br>
+  <label for="PlanInput">Choose a Lunch Time</label><br>
   <select id="PlanInput">
-      <option value="Option 1">Cook</option>
-      <option value="Option 2">Buy</option>
+      <option value="Option 1">12pm</option>
+      <option value="Option 2">12:45pm</option>
+      <option value="Option 3">1:30pm</option>
+      <option value="Option 4">2:15pm</option>
   </select><br>
   <label for="Meal">What are you making?</label><br>
   <textarea placeholder="I'm making..." id="MealInput"></textarea><br>
-  <input class="button-primary" type="submit" value="Submit"><br>
+  <label for="servings">How many servings are you making?</label><br>
+  <select>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+  </select><br>
+  <label for="price">Charge per serving?</label><br>
+  <select>
+    <option>$5</option>
+    <option>$6</option>
+    <option>$7</option>
+    <option>$8</option>
+    <option>$9</option>
+    <option>$10</option>
+  </select>
+  <input class="button-primary" type="submit" value="Post Meal"><br>
 </form>
+</div>
 
 
-
+<div id="buy-meal">
+<h1>Buy a Meal</h1>
+<form id="buying_meal">
+  <input type="Name" placeholder="Your Name" id="buyerName"><br> 
+  <label for="select-meal">When is your lunch?</label><br>
+  <select>
+          <option value="Option 1">12pm</option>
+          <option value="Option 2">12:45pm</option>
+          <option value="Option 3">1:30pm</option>
+          <option value="Option 4">2:15pm</option>
+  </select>
+  <input class="button-primary" type="submit" value="Find Food">
+</form>
+</div>
 
   </body>
 </html>
